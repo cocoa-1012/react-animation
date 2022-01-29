@@ -1,23 +1,18 @@
+import * as React from "react";
+import { useState } from "react";
 import "./App.css";
-import logo from "./logo.svg";
+import { Header } from "./components/header/Header";
+import { Sample } from "./components/sample/Sample";
+import { ScaledElement } from "./components/scaledElement/ScaledElement";
 
 function App() {
+  const [count, setCount] = useState(0);
+  console.log("Counts ====>>>>>", count);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="p-5">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link text-2xl font-bold underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Sample onClick={() => setCount(count + 1)} />
+      <ScaledElement />
     </div>
   );
 }
