@@ -1,18 +1,18 @@
 import * as React from "react";
-import { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import { Header } from "./components/header/Header";
-import { Sample } from "./components/sample/Sample";
+import { HomePage } from "./components/homePage/HomePage";
 import { ScaledElement } from "./components/scaledElement/ScaledElement";
 
 function App() {
-  const [count, setCount] = useState(0);
-  console.log("Counts ====>>>>>", count);
   return (
     <div className="App">
-      <Header />
-      <Sample onClick={() => setCount(count + 1)} />
-      <ScaledElement />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/scaledElement" component={ScaledElement} />
+        </Switch>
+      </Router>
     </div>
   );
 }
