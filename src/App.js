@@ -1,6 +1,8 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import { AboutUs } from "./components/aboutUs/AboutUs";
+import { Articles } from "./components/articles/Articles";
 import { routers } from "./components/config/Router";
 import { ContactUs } from "./components/contactUs/ContactUs";
 import { HomePage } from "./components/homePage/HomePage";
@@ -23,6 +25,8 @@ function App() {
             path={routers.externals.contactUs}
             component={ContactUs}
           />
+          <Route exact path={routers.externals.aboutUs} component={AboutUs} />
+          <Route exact path={routers.externals.articles} component={Articles} />
         </Switch>
       </Router>
     </div>

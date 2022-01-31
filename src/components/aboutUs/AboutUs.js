@@ -1,7 +1,7 @@
 // import { motion } from "framer-motion";
 import { Header } from "../header/Header";
 
-export const ContactUs = () => {
+export const AboutUs = () => {
   return (
     <>
       <Header />
@@ -11,7 +11,7 @@ export const ContactUs = () => {
           animate={{ scale: 3 }}
           transition={{ duration: 5 }}
         /> */}
-        Contact Us Page
+        About Us Page
       </div>
     </>
   );
