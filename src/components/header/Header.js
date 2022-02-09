@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
 import Logo from "../../../src/assets/images/Screenshot_4.png";
 import { routers } from "../config/Router";
-import { Sample } from "../sample/Sample";
+// import { Sample } from "../sample/Sample";
 
 export const Header = () => {
   const imageLogo = {
@@ -11,13 +11,13 @@ export const Header = () => {
     hover: { scale: 1.1 },
     pressed: { scale: 0.9 },
   };
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   const [isHover, setIsHover] = useState(false);
 
   return (
     <div className="absolute h-20 bg-yellow-200 flex items-center w-full justify-between px-8">
       {/* Refresh button sample */}
-      <Sample onClick={() => setCount(count + 1)} />
+      {/* <Sample onClick={() => setCount(count + 1)} /> */}
       {/* Logo Button */}
       <motion.div
         variants={imageLogo}
@@ -32,7 +32,7 @@ export const Header = () => {
       {/* Title */}
       <p className="text-3xl font-bold">
         SkySkills Projects{" "}
-        <span className="text-xl text-red-600">( Feb, 2022 | animation )</span>
+        {/* <span className="text-xl text-red-600">( Feb, 2022 | animation )</span> */}
       </p>
       {/* Contact Us */}
       <div className="flex text-xl font-bold cursor-pointer">
@@ -82,7 +82,7 @@ export const Header = () => {
         )}
       </div>
       {/* Social buttons List */}
-      <p>social buttons</p>
+      {/* <p>social buttons</p> */}
     </div>
   );
 };
