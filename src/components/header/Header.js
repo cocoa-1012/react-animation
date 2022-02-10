@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
 import Logo from "../../../src/assets/images/Screenshot_4.png";
-import { routers } from "../config/Router";
+import { routers } from "../../config/Router";
 // import { Sample } from "../sample/Sample";
 
 export const Header = () => {

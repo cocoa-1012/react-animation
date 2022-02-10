@@ -4,7 +4,7 @@ import * as emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import * as Yup from "yup";
-import { Header } from "../header/Header";
+import { Header } from "../../components/header/Header";
 
 emailjs.init("user_I3xoLdpSzx2QscwoOeLZL");
 

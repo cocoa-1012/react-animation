@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Header } from "../header/Header";
+import { Header } from "../../components/header/Header";
 
 export const ScaledElement = () => {
   return (

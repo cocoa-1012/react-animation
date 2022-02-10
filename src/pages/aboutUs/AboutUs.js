@@ -1,7 +1,7 @@
 // import { motion } from "framer-motion";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Header } from "../header/Header";
+import { Header } from "../../components/header/Header";
 
 // const validate = (values) => {
 //   const errors = {};

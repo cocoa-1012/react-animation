@@ -1,12 +1,12 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import { AboutUs } from "./components/aboutUs/AboutUs";
-import { Articles } from "./components/articles/Articles";
-import { routers } from "./components/config/Router";
-import { ContactUs } from "./components/contactUs/ContactUs";
-import { HomePage } from "./components/homePage/HomePage";
-import { ScaledElement } from "./components/scaledElement/ScaledElement";
+import { routers } from "./config/Router";
+import { AboutUs } from "./pages/aboutUs/AboutUs";
+import { Articles } from "./pages/articles/Articles";
+import { ContactUs } from "./pages/contactUs/ContactUs";
+import { HomePage } from "./pages/homePage/HomePage";
+import { ScaledElement } from "./pages/scaledElement/ScaledElement";
 
 function App() {
   console.log("Routers", routers);
