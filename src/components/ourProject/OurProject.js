@@ -9,7 +9,7 @@ export const OurProject = () => {
   const SliderImgClass =
     "flex items-center w-[200px] h-[120px] bg-red-600 m-auto";
   return (
-    <div className="flex items-center relative h-[450px] bg-gradient-to-t from-[#76e6ff] to-[#76e6ff]">
+    <div className="flex items-center relative h-[450px]">
       <img
         className="absolute top-0 w-screen h-[100px]"
         src={BackImgTop}
